@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
 <head>
-	<meta charset="UTF-8">
-	<title>Servicio de drones en la Cordillera</title>
-
-	<style>
-		h1 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
-		nav {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
-	</style>
+    <meta charset="UTF-8">
+    <title>Servicio de drones en la Cordillera</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
-<header>
-	<h1 align = "center"> Drones Chancho Carancho: un punto de vista diferente </h1>
-</header>
-
-<nav>
-	<div align = "center">
-        <a href = "index.html">                 Inicio </a> 
-		 - 
-		<a href = "construccion_drones.html">   Construcción </a> 
-		 - 
-        <a href = "agricultura_drones.html">    Agricultura </a> 
-		 - 
-        <a href = "publicidad_drones.html">     Publicidad </a> 
-		 - 
-        <a href = "contacto_drones.html">       Contacto </a> 
-           
-	</div>	
-</nav>
-
 <body background = "img_background.jpg" >
-        		
-	<br>
-    <br>	
-	<div align = "center">
+    <header>
+		<div class:"wrapper">
+			<div class="logo">
+				Drones Chancho Carancho: un punto de vista diferente
+			</div>
+			
+			<nav>
+				<a href = "index.html">                 Inicio </a> 
+				<a href = "construccion_drones.html">   Construcción </a> 
+				<a href = "agricultura_drones.html">    Agricultura </a> 
+				<a href = "publicidad_drones.html">     Publicidad </a> 
+				<a href = "contacto_drones.html">       Contacto </a> 
+			</nav>
+		</div>
+	</header>
+
+	<br><br>	
+	
+    <section align="left" class="wrapper">
 		<p>
-            Envianos tu consulta a <a href = "mailto:email@email.com">email@email.com</a>,
-            o escribinos un Whatsapp al +54911XXXXXXXX
+            Envianos un mensaje a <a href = "mailto:email@email.com">email@email.com</a>,
+            o escribinos un Whatsapp al <a href="https://api.whatsapp.com/send?phone=54911XXXXXX">+54911XXXXXXXX</a>
         </p>
-
-	</div>
-
-    <div align = "left">
+        <br>
+    </section>
+	
         <form method="post" action="consultas.php" name="prueba">
-            O dejanos tu consulta:
-            <br>
-            <br>
-            Nombre: <input id="Nombre" name="Nombre" size="20">
-            <br>
-            Apellido: <input id="Apellido" name="Apellido" size="20">
-            <br>
-            <br>
-            
+            O dejanos tu consulta: <br><br>
+
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe">
+            <br><br>
             <select name="Servicio" id="turno">
                 <option value="" disabled selected hidden>Elegí un servicio</option> 
                 <option value="Construcción">Construcción</option> 
@@ -62,30 +50,18 @@
                 <option value="Otro">Otro</option> 
                 
             </select>
-            <br><br>
-            
-            <textarea cols = "50" rows = "10" name = "Observaciones" placeholder="Tu consulta aquí"></textarea>
-
             <br>
-            <input type="submit" value="Ingresar">
-
-        
-            </form>    
+            <textarea cols = "40" rows = "10" name = "Observaciones" placeholder="Tu consulta aquí"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>    
           
-    </div>
+        
     
-    <!-- <br>
-    <p align = "center" > <img  src = "img_contacto.jpg" alt = "ImagenZorro" width="128" height="128" > </p>
-    <br> -->
-    
-    <p align = "center" >
-    Encontranos en
-    <br><br>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8403573274363!2d-58.37249508421297!3d-34.60819816524329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352c95f0d4f5%3A0xee8dc0a5eb259e82!2sBalcarce%2050%2C%20C1064%20CABA!5e0!3m2!1sen!2sar!4v1618256152287!5m2!1sen!2sar"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </p>
-    <br>
-    <br>
+    width="420" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="elMapita"></iframe>
+    
+  
 				
 </body>
 

@@ -1,0 +1,64 @@
+*{margin:0;padding:0;}
+
+
+header {
+    width:100%;
+    overflow: hidden;
+    background:#252932;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+.wrapper {
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+header .logo {
+    color:#f2f2f2;
+    font-size: 40px;
+    padding: 20px;
+}
+
+header nav {
+    line-height: 40px;
+}
+
+header nav a{
+    display: inline-block;
+    color:#fff;
+    text-decoration:none;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+ul { 
+    padding-left:50px;
+    text-align: left;
+    margin-left:200px;
+} 
+
+body footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    text-align: center;
+}
+
+body form {
+    padding-left:40px;
+}
+
+#elMapita{
+    position:relative;
+    bottom:325px;
+    left:400px;
+}
