@@ -5,62 +5,67 @@
     <meta charset="UTF-8">
     <title>Servicio de drones en la Cordillera</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
-<body background = "img_background.jpg" >
-    <header>
-		<div class:"wrapper">
-			<div class="logo">
-				Drones Chancho Carancho: un punto de vista diferente
-			</div>
-			
-			<nav>
-				<a href = "index.html">                 Inicio </a> 
-				<a href = "construccion_drones.html">   Construcción </a> 
-				<a href = "agricultura_drones.html">    Agricultura </a> 
-				<a href = "publicidad_drones.html">     Publicidad </a> 
-				<a href = "contacto_drones.html">       Contacto </a> 
-			</nav>
-		</div>
-	</header>
-
-	<br><br>	
-	
-    <section align="left" class="wrapper">
-		<p>
-            Envianos un mensaje a <a href = "mailto:email@email.com">email@email.com</a>,
-            o escribinos un Whatsapp al <a href="https://api.whatsapp.com/send?phone=54911XXXXXX">+54911XXXXXXXX</a>
-        </p>
-        <br>
-    </section>
-	
-        <form method="post" action="consultas.php" name="prueba">
-            O dejanos tu consulta: <br><br>
-
-            <label for="fname">Nombre:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br><br>
-            <label for="lname">Apellido:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe">
-            <br><br>
-            <select name="Servicio" id="turno">
-                <option value="" disabled selected hidden>Elegí un servicio</option> 
-                <option value="Construcción">Construcción</option> 
-                <option value="Agricultura">Agricultura</option> 
-                <option value="Publicidad">Publicidad</option> 
-                <option value="Otro">Otro</option> 
-                
-            </select>
-            <br>
-            <textarea cols = "40" rows = "10" name = "Observaciones" placeholder="Tu consulta aquí"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
-        </form>    
-          
+<header>
+    <div class:"wrapper">
+        <div class="logo">
+            Drones Chancho Carancho: un punto de vista diferente
+        </div>
         
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8403573274363!2d-58.37249508421297!3d-34.60819816524329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352c95f0d4f5%3A0xee8dc0a5eb259e82!2sBalcarce%2050%2C%20C1064%20CABA!5e0!3m2!1sen!2sar!4v1618256152287!5m2!1sen!2sar"
-    width="420" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="elMapita"></iframe>
-    
+        <nav>
+            <a href = "index.html">                 Inicio </a> 
+            <a href = "construccion_drones.html">   Construcción </a> 
+            <a href = "agricultura_drones.html">    Agricultura </a> 
+            <a href = "publicidad_drones.html">     Publicidad </a> 
+            <a href = "contacto_drones.html">       Contacto </a> 
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="seccionContacto">
+        <div class="contactInfo">
+            <ul class="no-bullet">
+                <li>
+                    <i class="fab fa-whatsapp"></i>
+                     <a href="https://api.whatsapp.com/send?phone=54911XXXXXX">+54911XXXXXXXX</a>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:drones@drones.com"> drones@drones.com </a>
+                </li>
+                <li>
+                    <i class="far fa-map"></i> 
+                    <a href="https://g.page/cementeriochacarita?share" target="_blank" rel="noopener">
+                        Av. Guzmán 680 - C1427 - CABA</a>
+                </li>
+                <li>
+                    <i class="fab fa-youtube"></i>
+                    <a href="#" target="_blank" rel="noopener">Canal de YouTube</a>
+                </li>
+                
+
+            </ul>
+        </div>
+        
+        <div class="contactFormulario">  
+            <h2>Dejanos un mensaje</h2> 
+            <form class="Contacto" method="post" action="consultas.php">
+                
+                <input class="casillaTexto" type="text"  name="fname" placeholder="Nombre" required>
+                <input class="casillaTexto" type="tel"   name="telef" placeholder="Teléfono">
+                <input class="casillaTexto" type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea rows = "5" name = "Mensaje" placeholder="Tu mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="botonEnviar">
+            </form>    
+        </div>
+
+    </div>
+	
+   
+           
   
 				
 </body>

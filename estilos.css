@@ -1,16 +1,17 @@
-*{margin:0;padding:0;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 header {
     width:100%;
     overflow: hidden;
     background:#252932;
     text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
 }
 
 .wrapper {
@@ -18,7 +19,6 @@ body {
     margin:auto;
     overflow:hidden;
     text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
 }
 
 header .logo {
@@ -39,11 +39,6 @@ header nav a{
     font-size: 15px;
 }
 
-ul { 
-    padding-left:50px;
-    text-align: left;
-    margin-left:200px;
-} 
 
 body footer {
     position: fixed;
@@ -53,12 +48,120 @@ body footer {
     text-align: center;
 }
 
-body form {
-    padding-left:40px;
+body{
+    min-height: 100vh;
+    background: url(img_background.jpg) no-repeat;
+    justify-content: center;
+    background-size: cover;
+    
 }
 
-#elMapita{
-    position:relative;
-    bottom:325px;
-    left:400px;
+ul.no-bullet{
+    list-style-type: none;
+}
+
+.seccionContacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo{
+    color: #252932;
+    padding-left: 50px;
+    font-size: 18px;
+    max-width: 500px;
+    line-height: 50px;
+}
+
+.contactInfo i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.contactFormulario{
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.contactInfo, .contactFormulario{
+    flex:1;
+}
+
+.contactFormulario h2{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.contactFormulario .casillaTexto{
+    background: #252932;
+    color:#fff;
+    border: none;
+    width: calc(50%-10px);
+    height: 30px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    margin-right: 10px;
+    opacity: 0.9 ;
+}
+
+.contactFormulario textarea{
+    background: #252932;
+    color:#fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    min-height: 100px;
+    max-height: 400px;
+    resize: vertical;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9 ;
+}
+
+.contactFormulario .botonEnviar{
+    float: right;
+    background: #2e94e3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactFormulario .botonEnviar:hover{
+    background: #0582e3;
+}
+
+@media screen and (max-width:950px){
+    .seccionContacto{
+        flex-direction: column;
+    }
+    .contactFormulario, .contactInfo{
+        margin: 20px 50px;
+    }
+
+    .contactFormulario h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contactFormulario .casillaTexto{
+        width: 100%;
+
+    }
 }
