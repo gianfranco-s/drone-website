@@ -40,7 +40,7 @@ header nav a{
     text-decoration:none;
     padding: 10px 20px;
     /* font-size: 15px; */
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 
@@ -201,7 +201,37 @@ h1,h2,p{
     font-size: 15px;
     border-radius: 5px;
     box-shadow: 0 1px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
-    margin-right: 10px;
-    opacity: 0.7 ;    
+    margin:10px; 
+    opacity: 0.7 ;
+    
+  
 }
+
+.caja-1{
+    --animate-delay: 0.0s;
+}
+
+.caja-2{
+    --animate-delay: 0.5s;
+}
+
+.caja-3{
+    --animate-delay: 1.0s;
+}
+
+@media (orientation: portrait) and (max-width:1000px) {
+    section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (orientation: landscape)
+    section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
