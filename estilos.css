@@ -23,22 +23,26 @@ header {
 
 header .logo {
     color:#f2f2f2;
-    font-size: 40px;
-    padding: 20px;
+    /* font-size: 40px;
+    padding: 20px; */
+    font-size: 4vh;
+    padding: 1vh;
 }
 
 header nav {
-    line-height: 40px;
+    /* line-height: 40px; */
+    line-height: 4vh;
 }
 
 header nav a{
     display: inline-block;
     color:#fff;
     text-decoration:none;
-    padding: 10px 20px;
-    font-size: 15px;
+    /* padding: 10px 20px;
+    font-size: 15px; */
+    padding: 1vh 2vh;
+    font-size: 2vh;
 }
-
 
 body footer {
     position: fixed;
@@ -50,10 +54,14 @@ body footer {
 
 body{
     min-height: 100vh;
-    background: url(img_background.jpg) no-repeat;
     justify-content: center;
-    background-size: cover;
     
+    background: url(img_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 1920px 1200px;
+    background-repeat: no-repeat;
 }
 
 ul.no-bullet{
@@ -175,6 +183,11 @@ section{
     
 }
 
+h1{
+    padding-top:    4vh;
+    padding-bottom: 2vh;
+}
+
 h1,h2,p{
     text-align: center;
     color: #f2f2f2;
@@ -190,5 +203,5 @@ h1,h2,p{
     box-shadow: 0 1px rgba(0,0,0,0.1);
     margin-bottom: 10px;
     margin-right: 10px;
-    opacity: 0.9 ;    
+    opacity: 0.7 ;    
 }
