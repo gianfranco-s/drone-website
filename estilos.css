@@ -215,7 +215,7 @@ h1,h2,p{
     --animate-delay: 1.0s;
 }
 
-@media (orientation: portrait) and (max-width:1000px) {
+@media (orientation: landscape) and (max-width:1000px) {
     section{
         flex-direction: column;
         justify-content: space-evenly;
@@ -223,11 +223,16 @@ h1,h2,p{
     }
 }
 
-@media (orientation: landscape){
+@media (orientation: portrait){
     section{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    body{
+        background: url(vertical.jpeg);
+        background-color: #2e94e3;
     }
 }
 
