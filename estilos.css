@@ -23,15 +23,12 @@ header {
 
 header .logo {
     color:#f2f2f2;
-    /* font-size: 40px;
-    padding: 20px; */
-    font-size: 4vh;
-    padding: 1vh;
+    font-size: 40px;
+    padding: 20px;
 }
 
 header nav {
-    /* line-height: 40px; */
-    line-height: 4vh;
+    line-height: 40px;
 }
 
 header nav a{
@@ -39,8 +36,7 @@ header nav a{
     color:#fff;
     text-decoration:none;
     padding: 10px 20px;
-    /* font-size: 15px; */
-    font-size: 1.5vw;
+    font-size: 15px;
 }
 
 
@@ -227,7 +223,7 @@ h1,h2,p{
     }
 }
 
-@media (orientation: landscape)
+@media (orientation: landscape){
     section{
         flex-direction: column;
         justify-content: space-evenly;
