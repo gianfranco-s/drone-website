@@ -38,11 +38,11 @@ header nav a{
     display: inline-block;
     color:#fff;
     text-decoration:none;
-    /* padding: 10px 20px;
-    font-size: 15px; */
-    padding: 1vh 2vh;
-    font-size: 2vh;
+    padding: 10px 20px;
+    /* font-size: 15px; */
+    font-size: 2vw;
 }
+
 
 body footer {
     position: fixed;
