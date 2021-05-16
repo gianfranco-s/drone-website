@@ -236,3 +236,19 @@ h1,h2,p{
     }
 }
 
+
+.carousel-inner img {
+    margin: auto;
+  }
+
+.textoCarousel{
+    color:#000;
+}
+
+h5.textoCarousel{
+    font-size: 26px;
+}
+
+p.textoCarousel{
+    font-size: 20px;
+}

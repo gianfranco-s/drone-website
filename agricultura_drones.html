@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 
 
@@ -27,27 +29,46 @@
 		</div>
 	</header>
 
-	<br><br>	
-    <section class="wrapper">
-    
-        
-        <ul >
-            <li>Análisis de estado de cultivos.</li>
-            <li>Control de daños.</li>
-            <li>Reconocimiento de malezas.</li>
-            <li>Imágenes multiespectrales.</li>
-        </ul>
-
-        <br><br>
-
-        <img  src = "img_agricultura.jpeg" alt = "ImagenCampo" >
-    
-    </section>
-    
-    
-    
-    
-    
+	<br><br><br>
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="imagenesAgricultura/IMAG01.png" class="d-block w-50" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="textoCarousel">Detección infecciones</h5>
+			  <p class="textoCarousel">En rojo se observan las áreas con déficit de clorofila.</p>
+			</div>
+		  </div>
+		  
+		  <div class="carousel-item">
+			<img src="imagenesAgricultura/IMAG02.png" class="d-block w-50" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="textoCarousel">Monitoreo y planificación de riego</h5>
+			  <p class="textoCarousel">Permite identificar regiones excesivamente húmedas o secas.</p>
+			</div>
+		  </div>
+		 
+		  <div class="carousel-item">
+			<img src="imagenesAgricultura/IMAG03.png" class="d-block w-50" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="textoCarousel">Medición de efectividad de los funguicidas</h5>
+			  <p class="textoCarousel">Las plantas más sanas se muestran en verda.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+	  
+	  
 	<footer>Copyright TuCara</footer>
 			
 </body>
