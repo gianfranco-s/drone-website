@@ -264,6 +264,10 @@ p.textoCarousel{
 }
 
 @media (orientation: portrait){
+    .seccionContacto{
+        flex-direction: column;
+    }
+    
     section{
         flex-direction: column;
         justify-content: space-evenly;
