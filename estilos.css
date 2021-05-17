@@ -163,65 +163,6 @@ ul.no-bullet{
 /* ----- Formulario de contacto ----- */
 
 
-
-/* ----- Media queries ----- */
-@media screen and (max-width:950px){
-    .seccionContacto{
-        flex-direction: column;
-    }
-    .contactFormulario, .contactInfo{
-        margin: 20px 50px;
-    }
-
-    .contactFormulario h2{
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .contactFormulario .casillaTexto{
-        width: 100%;
-
-    }
-    
-    section{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-}
-
-@media (orientation: portrait){
-    .seccionContacto{
-        flex-direction: column;
-    }
-    .contactFormulario, .contactInfo{
-        margin: 20px 50px;
-    }
-
-    .contactFormulario h2{
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .contactFormulario .casillaTexto{
-        width: 100%;
-
-    }
-    
-    section{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    body{
-        background: url(vertical.jpeg);
-        
-    }
-}
-
-/* ----- Fin de Media queries ----- */
-
 /* ----- Flex ----- */
 section{
     display: flex;
@@ -297,3 +238,62 @@ p.textoCarousel{
 }
 
 /* ----- Fin de Configuraciones Carousel para "agricultura_drones.html" ----- */
+
+
+/* ----- Media queries ----- */
+@media screen and (max-width:950px){
+    .seccionContacto{
+        flex-direction: column;
+    }
+    .contactFormulario, .contactInfo{
+        margin: 20px 50px;
+    }
+
+    .contactFormulario h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contactFormulario .casillaTexto{
+        width: 100%;
+
+    }
+    
+    section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/* @media (orientation: portrait){
+    .seccionContacto{
+        flex-direction: column;
+    }
+    .contactFormulario, .contactInfo{
+        margin: 20px 50px;
+    }
+
+    .contactFormulario h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contactFormulario .casillaTexto{
+        width: 100%;
+
+    }
+    
+    section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    body{
+        background: url(vertical.jpeg);
+        
+    }
+} */
+
+/* ----- Fin de Media queries ----- */
