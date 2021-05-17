@@ -164,7 +164,7 @@ ul.no-bullet{
 
 
 
-/* ----- RWD para "contacto_drones.html" ----- */
+/* ----- Media queries ----- */
 @media screen and (max-width:950px){
     .seccionContacto{
         flex-direction: column;
@@ -182,9 +182,45 @@ ul.no-bullet{
         width: 100%;
 
     }
+    
+    section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
-/* ----- Fin de RWD para "contacto_drones.html" ----- */
 
+@media (orientation: portrait){
+    .seccionContacto{
+        flex-direction: column;
+    }
+    .contactFormulario, .contactInfo{
+        margin: 20px 50px;
+    }
+
+    .contactFormulario h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contactFormulario .casillaTexto{
+        width: 100%;
+
+    }
+    
+    section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    body{
+        background: url(vertical.jpeg);
+        
+    }
+}
+
+/* ----- Fin de Media queries ----- */
 
 /* ----- Flex ----- */
 section{
@@ -234,50 +270,12 @@ h1,h2,p{
     --animate-delay: 1.0s;
 }
 
-@keyframes fadeInRight {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 0.7;
-    }
-}
 
 /* ----- Fin Delay Animaciones ----- */
 
 
 
-/* ----- Media queries para "index.html" ----- */
-@media (orientation: landscape) and (max-width:1000px) {
-    section{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-}
 
-@media (orientation: portrait){
-    section{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    body{
-        background: url(vertical.jpeg);
-        
-    }
-}
-
-/* ----- Fin de Media queries para "index.html" ----- */
 
 
 
