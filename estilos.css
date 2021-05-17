@@ -201,7 +201,7 @@ h1,h2,p{
 
 
 
-/* ----- Delay Animaciones ----- */
+/* ----- Animaciones ----- */
 .caja-1{
     --animate-delay: 0.0s;
 }
@@ -267,7 +267,7 @@ p.textoCarousel{
     .seccionContacto{
         flex-direction: column;
     }
-    
+
     section{
         flex-direction: column;
         justify-content: space-evenly;
