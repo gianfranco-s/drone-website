@@ -257,7 +257,7 @@ p.textoCarousel{
 /* ----- Media queries ----- */
 
 @media (min-width:1600px){
-    body{
+    body {
         background: #389fee;
     }
 }
@@ -273,7 +273,7 @@ p.textoCarousel{
     .contactFormulario h2{
         /* font-size: 30px; */
         /* font-size: 2em; */
-        font-size: 50vh;
+        font-size: 10vh;
         text-align: center;
     }
 
