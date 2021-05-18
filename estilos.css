@@ -276,6 +276,8 @@ p.textoCarousel{
 
 /* ----- Fin de Configuraciones Carousel para "agricultura_drones.html" ----- */
 
+
+
 /* ----- Media queries ----- */
 
 @media (min-width:1600px){
@@ -323,6 +325,34 @@ p.textoCarousel{
     body{
         background: url(vertical.jpeg);
         
+    }
+
+    header {
+        width:100%;
+        overflow: hidden;
+        background:#252932;
+        text-align: center;
+    }
+    
+    .wrapper {
+        width:100%;
+        margin:auto;
+        overflow:hidden;
+        text-align: center;
+    }
+    
+    header .logo {
+        color:#f2f2f2;
+        font-size: 2.5em;
+        padding: 0.6em;
+    }
+            
+    header nav a{
+        display: block;
+        color:#fff;
+        text-decoration:none;
+        padding: 0.3em 0.6em;
+        font-size: 1em;
     }
 }
 
