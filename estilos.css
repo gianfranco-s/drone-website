@@ -272,8 +272,7 @@ p.textoCarousel{
 
     .contactFormulario h2{
         /* font-size: 30px; */
-        /* font-size: 2em; */
-        font-size: 0.03vh;
+        font-size: 2em;
         text-align: center;
     }
 
