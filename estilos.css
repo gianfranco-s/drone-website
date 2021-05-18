@@ -97,8 +97,9 @@ ul.no-bullet{
 }
 
 .contactInfo i{
-    margin-right: 20px;
-    /* font-size: 20px; */
+    /*margin-right: 20px;
+    font-size: 20px; */
+    margin-right: 1.25em;
     font-size: 1.25em;
 }
 
@@ -171,6 +172,11 @@ ul.no-bullet{
 
 .contactFormulario .botonEnviar:hover{
     background: #0582e3;
+}
+
+
+.colorContacto{
+    color: aqua;
 }
 
 /* ----- Formulario de contacto ----- */
@@ -343,7 +349,7 @@ p.textoCarousel{
     header .logo {
         color:#f2f2f2;
         font-size: 1.5em;
-        padding: 0.6em;   /* Lo encontré por prueba-error*/
+        padding: 0.6em;
     }
     
         
