@@ -321,6 +321,12 @@ p.textoCarousel{
         flex-direction: column;
     }
 
+    .contactInfo{
+        color: #252932;
+        padding-left: 1em;
+        font-size: 1.125em;
+    }
+
     section{
         flex-direction: column;
         justify-content: space-evenly;
