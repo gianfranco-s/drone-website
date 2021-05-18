@@ -207,8 +207,14 @@ h1,h2,p{
     border-radius: 5px;
     box-shadow: 0 1px rgba(0,0,0,0.1);
     margin:10px; 
-    opacity: 0.7 ;
-    
+    opacity: 0;
+    animation: miAnimacion 1.2s forwards;
+}
+
+
+.animarOBJ{                   /* La uso para animar objetos que tengan opacidad 1*/
+    opacity: 0;
+    animation: animarImagen 1.2s forwards;
 }
 
 /* ----- Fin de Flex ----- */
@@ -216,17 +222,33 @@ h1,h2,p{
 
 
 /* ----- Animaciones ----- */
-.caja-1{
-    --animate-delay: 0.0s;
+@keyframes miAnimacion {
+    from{
+        opacity: 0;
+        transform: translateX(200%);
+    }
+
+    to{
+        opacity:0.7;
+    }
+    
 }
 
-.caja-2{
-    --animate-delay: 0.5s;
+@keyframes animarImagen{
+    from{
+        opacity: 0;
+        transform: translateX(200%);
+    }
+
+    to{
+        opacity:1;
+    }
+    
 }
 
-.caja-3{
-    --animate-delay: 1.0s;
-}
+.caja-1{ animation-delay: 0.0s; }
+.caja-2{ animation-delay: 0.5s; }
+.caja-3{ animation-delay: 1.0s; }
 
 
 
@@ -304,4 +326,4 @@ p.textoCarousel{
     }
 }
 
-/* ----- Fin de Media queries ----- */
+/* ----- Fin de Media queries ----- */8
