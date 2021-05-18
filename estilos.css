@@ -343,12 +343,13 @@ p.textoCarousel{
     
     header .logo {
         color:#f2f2f2;
-        font-size: 2.5em;
-        padding: 0.6em;
+        font-size: 2.5em; /* = 40px / 16px */ 
+        padding: 0.6em;   /* Lo encontré por prueba-error*/
     }
-            
+    
+        
     header nav a{
-        display: block;
+        display: inline-block;
         color:#fff;
         text-decoration:none;
         padding: 0.3em 0.6em;
