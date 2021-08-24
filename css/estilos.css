@@ -5,6 +5,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: Poppins,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 
@@ -62,7 +63,7 @@ body{
     min-height: 100vh;
     justify-content: center;
     
-    background: url(img_background.jpg);
+    background: url(../images/img_background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: left top;
@@ -288,7 +289,15 @@ p.textoCarousel{
 
 @media (min-width:1600px){
     body {
-        background: #389fee;
+        /* background: #389fee; */
+        background: url(../images/img_background01.jpg);
+      
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: left top;
+        background-repeat: no-repeat;
+        /* background-size: 1920px 1200px; */
+        background-size: 100% 100%;  
     }
 }
 
@@ -334,8 +343,8 @@ p.textoCarousel{
     }
 
     body{
-        background: url(vertical.jpeg);
-        
+        background: url(../images/vertical.jpeg);
+        background-size: cover;
     }
 
     header {
